@@ -73,10 +73,14 @@ class _MyHomePageState extends State<MyHomePage> {
   }
 
   void Printy() async {
+    var sendMap = <String, dynamic> {
+      "val1" : "2"
+    };
+
     String value;
 
     try {
-      value = await platform.invokeMethod("Printy");
+      value = await platform.invokeMethod("Printy", sendMap);
     } catch (e) {
       print(e);
     }
