@@ -61,7 +61,7 @@ class _MyHomePageState extends State<MyHomePage> {
                         ]
                     ),
 
-                    title: Text("VENT")
+                    title: Text("Calculator")
                 ),
 
                 body: TabBarView(
